@@ -1,7 +1,8 @@
 const express = require("express");
 const db = require("./database/config");
 const mongoose = require("mongoose");
-const PORT = process.env.PORT || 3001;
+const HOST = '0.0.0.0';
+const PORT = process.env.PORT || 5000;
 
 class App {
     constructor() {
@@ -11,7 +12,7 @@ class App {
         this.middlewares();
         this.routes();
 
-        this.express.listen(8080, () => {
+        this.express.listen(PORT, HOST, () => {
             console.log(`Application running on port ${PORT}`);
         });
                            }
