@@ -10,8 +10,8 @@ class App {
     this.middlewares();
     this.routes();
 
-    this.express.listen(3001, () =>
-      console.log(`Sua API REST está funcionando na porta 3001`)
+    this.express.listen(8080, () =>
+      console.log(`Application running on port 8080`);
     );
   }
 
