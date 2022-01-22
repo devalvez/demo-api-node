@@ -14,6 +14,8 @@ routes.get("/request-exemple", function(req, res) {
 });
 
 routes.get("/user", UserController.index);
+routes.get("/user/:id", UserController.show);
 routes.post("/user", UserController.store);
+routes.put("/user/:id/update", UserController.update);
 
 module.exports = routes;

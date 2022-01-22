@@ -14,9 +14,24 @@ const UserSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        socialNetwork: {
-            type: String,
-        }
+        socialNetwork: [{
+            facebook: {
+                type: String,
+                required: false
+            },
+            instagram: {
+                type: String,
+                required: false
+            },
+            twitter: {
+                type: String,
+                required: false
+            },
+            linkeding: {
+                type: String,
+                required: false
+            }
+        }]
     },
     {
         timestamps: true
