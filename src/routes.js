@@ -10,7 +10,7 @@ routes.get("/", function(req, res) {
 });
 
 routes.get("/request-exemple", function(req, res) {
-    res.sendFile(path.join(__dirname+'/html/request.html'));
+    res.sendFile(path.join(__dirname+'/html/introduction.html'));
 });
 
 routes.get("/user", UserController.index);
